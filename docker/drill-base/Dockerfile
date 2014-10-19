@@ -7,7 +7,6 @@ RUN apt-get install -y git
 RUN apt-get install -y openjdk-7-jdk 
 RUN apt-get install -y wget
 
-ADD ./drill-override.conf /tmp/drill-override.conf
 ADD ./install.sh /tmp/install.sh
 RUN /bin/bash /tmp/install.sh
 
